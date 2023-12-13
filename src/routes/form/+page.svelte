@@ -28,6 +28,7 @@ export let form;
 console.log(form)
 </script>
 {form?.name}
+{form?.email}
 {form?.pass}
 
 <svelte:head>

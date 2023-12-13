@@ -1,9 +1,10 @@
 export const actions = {
   default: async ({ cookies, request }) => {
     const data = await request.formData();
-    const email = data.get("name");
+    const name = data.get("name");
+    const email = data.get("email");
     const password = data.get("password");
-    return { name: email, pass: password };
+    return { name: name, email: email, pass: password };
     // console.log(email, password);
 
     //-----------cookie set------------------
