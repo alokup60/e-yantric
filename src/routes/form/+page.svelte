@@ -10,6 +10,7 @@
 // let password="";
 // let message="";
 
+//-------------------------------No need to add submitHandler--------------------
 // const submitHandler = async() => {
 //     message=""
 // 	const resp = await fetch('/form',{
