@@ -9,10 +9,16 @@ export const actions = {
 
       //------------------validation-----------------
       if (!name || !email || !password) {
-        throw new Error("Incomplete Credentials");
+        return {
+          inValid: "please fill required data",
+        };
+        // throw new Error("Incomplete Credentials");
       }
       if (name.length < 3 || password.length < 6) {
-        throw new Error("Name and password is Invalid");
+        return {
+          lenInvalid: "Please fill required length",
+        };
+        // throw new Error("Name and password is Invalid");
       }
       const userData = { name, email, password };
 
