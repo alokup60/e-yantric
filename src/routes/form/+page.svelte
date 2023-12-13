@@ -27,7 +27,7 @@
 export let form;
 console.log(form)
 </script>
-{form.name}
+{form?.name}
 {form?.pass}
 
 <svelte:head>

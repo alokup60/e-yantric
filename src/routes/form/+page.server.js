@@ -6,6 +6,7 @@ export const actions = {
     return { name: email, pass: password };
     // console.log(email, password);
 
+    //-----------cookie set------------------
     // cookies.set("name", email, { path: "/" });
     // let x = cookies.getAll();
     // console.log(x);
