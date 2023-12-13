@@ -1,36 +1,10 @@
 <script>
-//   import { json } from "@sveltejs/kit";
-//   import {POST} from "./+server";
- 
- 
- 
-// // <POST /> 
-// let name = "";
-// let email="";
-// let password="";
-// let message="";
-
-//-------------------------------No need to add submitHandler--------------------
-// const submitHandler = async() => {
-//     message=""
-// 	const resp = await fetch('/form',{
-// 		method: 'POST',
-// 		body: JSON.stringify({
-// 			name,
-// 			email,
-// 			password
-// 		})
-// 	})
-// 	const data = await resp.json()
-//     message = data.message;
-// 	console.log(data)
-// }
 export let form;
 console.log(form)
 </script>
 {form?.name}
 {form?.email}
-{form?.pass}
+{form?.password}
 
 <svelte:head>
 	<title>Form</title>
